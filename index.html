@@ -6,18 +6,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
     <title>Admin Dashboard</title>
 </head>
 
 <body>
-    <div class="grid-container">
-        <div class="header">
+    <div class="container">
+        <div id="header">
+            Header
+        </div>
+
+        <div id="sidebar">
+
+            <div id="logo-container">
+                <div class="logo">
+                    <img src="/Icons/view-dashboard.svg" alt="four rectangular shapes divided by space creating a square" class="sidebar-icon">
+                    <h2>Dashboard</h2>
+                </div>
+            </div>
+
+            <!-- <div class="icons-container">
+                <img src="/Icons/view-dashboard.svg" alt="four rectangular shapes divided by space creating a square" class="sidebar-icon">
+                <img src="/Icons/home.svg" alt="House" class="sidebar-icon">
+                <img src="/Icons/face-man-profile.svg" alt="side of face" class="sidebar-icon">
+                <img src="/Icons/message-reply.svg" alt="message bubble" class="sidebar-icon">
+            </div>
+
+            <div class="links-container">
+                <h2>Dashboard</h2>
+                <h3><a href="">Home</a></h3>
+                <h3><a href="">Profile</a></h3>
+                <h3><a href="">Messages</a></h3>
+                <h3><a href="">History</a></h3>
+                <h3><a href="">Tasks</a></h3>
+                <h3><a href="">Communities</a></h3>
+            </div> -->
+
+            <div id="nav-container">
+                <div class="nav" id="home">
+                    <img src="/Icons/home.svg" alt="House" class="sidebar-icon">
+                    <h3><a href="">Home</a></h3>
+
+                </div>
+                <div class="nav" id="profile">
+                    <img src="/Icons/face-man-profile.svg" alt="side of face" class="sidebar-icon">
+                    <h3><a href="">Profile</a></h3>
+                </div>
+                <div class="nav" id="messages">
+                    <img src="/Icons/message-reply.svg" alt="message bubble" class="sidebar-icon">
+                    <h3><a href="">Messages</a></h3>
+                </div>
+                <div class="nav" id="history">
+                    <img src="/Icons/clock-time-three.svg" alt="clock" class="sidebar-icon">
+                    <h3><a href="">History</a></h3>
+                </div>
+                <div class="nav" id="tasks">
+                    <img src="/Icons/calendar-check.svg" alt="calendar" class="sidebar-icon">
+                    <h3><a href="">Tasks</a></h3>
+                </div>
+                <div class="nav" id="communities">
+                    <img src="/Icons/account-group.svg" alt="group of 3 people" class="sidebar-icon">
+                    <h3><a href="">Communities</a></h3>
+                </div>
+            </div>
+
+            <div id="account-container">
+                <div class="account" id="settings">
+                    <img src="/Icons/cog.svg" alt="cog wheel" class="sidebar-icon">
+                    <h3><a href="">Settings</a></h3>
+                </div>
+                <div class="account" id="support">
+                    <img src="/Icons/account-question.svg" alt="question mark in rectangle" class="sidebar-icon">
+                    <h3><a href="">Support</a></h3>
+                </div>
+                <div class="account" id="privacy">
+                    <img src="/Icons/shield-check.svg" alt="shield with checkmark" class="sidebar-icon">
+                    <h3><a href="">Privacy</a></h3>
+                </div>
+            </div>
 
         </div>
-        <div class="sidebar">
-            <div id="logo">Dashboard</div>
-        </div>
-        <div class="main-content">Main</div>
+
+        <div id="main-content">Main</div>
     </div>
 </body>
 
