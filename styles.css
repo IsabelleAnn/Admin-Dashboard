@@ -24,10 +24,6 @@
                             gap: 50px;
                         }
                         
-                        .sidebar-icon {
-                            filter: invert(98%) sepia(0%) saturate(2%) hue-rotate(13deg) brightness(104%) contrast(101%);
-                        }
-                        
                         .logo,
                         .nav,
                         .account {
@@ -82,7 +78,7 @@
                         #profile-bell,
                         #profile-btns {
                             display: grid;
-                            grid-template-columns: auto auto auto;
+                            grid-template-columns: repeat(3, auto);
                             grid-template-rows: auto;
                             justify-content: end;
                             align-items: center;
@@ -92,6 +88,25 @@
                             display: grid;
                             grid-template-columns: auto auto;
                             grid-template-rows: auto auto;
+                        }
+                        
+                        #main-content {
+                            background-color: #e2e8f0;
+                            grid-column: 2;
+                            grid-row: 2;
+                            z-index: 1;
+                            display: grid;
+                            grid-template-columns: auto auto;
+                            grid-template-rows: auto;
+                            gap: 20px;
+                            padding: 30px 20px 0px 20px;
+                        }
+                        
+                        #project-cards-container {
+                            display: grid;
+                            grid-template-columns: auto auto;
+                            grid-template-rows: repeat(3, 1fr);
+                            gap: 20px;
                         }
                         
                         #search,
@@ -107,11 +122,22 @@
                             column-gap: 15px;
                         }
                         
-                        #main-content {
-                            background-color: #e2e8f0;
-                            grid-column: 2;
-                            grid-row: 2;
-                            z-index: 1;
+                        #profile-welcome p {
+                            font-size: .8rem;
+                            font-weight: 700;
+                        }
+                        
+                        .sidebar-icon {
+                            filter: invert(98%) sepia(0%) saturate(2%) hue-rotate(13deg) brightness(104%) contrast(101%);
+                            width: 20px;
+                        }
+                        
+                        .logo img {
+                            width: 40px;
+                        }
+                        
+                        .logo h2 {
+                            font-weight: 800;
                         }
                         
                         .nav a,
@@ -133,12 +159,12 @@
                         
                         .sml-thumbnail {
                             width: 35px;
-                            border-radius: 50%;
+                            clip-path: circle();
                         }
                         
                         .med-thumbnail {
                             width: 50px;
-                            border-radius: 50%;
+                            clip-path: circle();
                             grid-row: span 2;
                         }
                         
@@ -159,8 +185,118 @@
                             border-radius: 15px;
                             font-size: .7rem;
                             cursor: pointer;
+                            font-weight: 800;
                         }
                         
                         #profile-btns button:hover {
                             background-color: #0076b6;
+                        }
+                        
+                        .card-header {
+                            padding-bottom: 10px;
+                        }
+                        
+                        .project-card {
+                            background-color: white;
+                            border-radius: 5px;
+                            border-left: #efb429 5px solid;
+                            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.205);
+                            display: grid;
+                            grid-template-rows: 3fr 1fr;
+                            grid-template-columns: 1fr;
+                            padding: 20px;
+                            min-width: 300px;
+                        }
+                        
+                        .project-card h4 {
+                            padding-bottom: 4px;
+                        }
+                        
+                        .project-card p {
+                            font-size: .7rem;
+                            color: rgb(95, 95, 95);
+                        }
+                        
+                        .project-card-icons {
+                            text-align: right;
+                            align-self: end;
+                        }
+                        
+                        .project-card-icons img {
+                            padding-left: 10px;
+                            cursor: pointer;
+                        }
+                        
+                        #announcements {
+                            background-color: white;
+                            border-radius: 5px;
+                            display: grid;
+                            grid-template-columns: auto;
+                            grid-auto-flow: row;
+                            padding: 20px;
+                            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.205);
+                            margin-bottom: 35px;
+                            max-width: 250px;
+                        }
+                        
+                        .announcement h4 {
+                            font-size: .6rem;
+                            padding-bottom: 2px;
+                            font-weight: 800;
+                        }
+                        
+                        .announcement p {
+                            font-size: .6rem;
+                            color: rgb(95, 95, 95);
+                        }
+                        
+                        .announcement {
+                            border-bottom: rgb(231, 231, 231) solid 1px;
+                            padding: 10px 0px;
+                        }
+                        
+                        .announcement:last-child {
+                            border-bottom: none;
+                            padding-bottom: 0;
+                        }
+                        
+                        .announcement:first-child {
+                            padding-top: 0;
+                        }
+                        
+                        #trending {
+                            background-color: white;
+                            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.205);
+                            border-radius: 5px;
+                            padding: 20px 20px 10px 20px;
+                            max-width: 250px;
+                        }
+                        
+                        #trending-profile-info {
+                            display: grid;
+                            grid-template-columns: auto auto;
+                            grid-template-rows: auto auto;
+                            align-items: center;
+                            justify-content: start;
+                            gap: 10px 8px;
+                        }
+                        
+                        .trending-img {
+                            padding-right: 10px;
+                        }
+                        
+                        .trending-text {
+                            font-size: .65rem;
+                        }
+                        
+                        .slogan {
+                            color: rgb(95, 95, 95);
+                        }
+                        
+                        .username {
+                            font-weight: 700;
+                        }
+                        
+                        #trending {
+                            margin-bottom: 20px;
                         }
