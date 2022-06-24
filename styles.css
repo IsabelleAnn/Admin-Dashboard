@@ -57,7 +57,7 @@
                             grid-row: 1/2;
                             box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.205);
                             z-index: 2;
-                            padding: 20px;
+                            padding: 1% 5%;
                             gap: 30px;
                         }
                         
@@ -65,7 +65,6 @@
                             display: grid;
                             grid-template-columns: auto auto;
                             grid-template-rows: auto;
-                            gap: 70px;
                         }
                         
                         #search,
@@ -73,6 +72,11 @@
                             display: grid;
                             grid-template-columns: auto auto;
                             grid-template-rows: auto;
+                            align-items: center;
+                        }
+                        
+                        #welcome-container {
+                            padding: 1% 0px;
                         }
                         
                         #profile-bell,
@@ -93,7 +97,14 @@
                         #search,
                         #profile-welcome {
                             justify-content: start;
-                            align-items: c;
+                            align-items: center;
+                        }
+                        
+                        #search,
+                        #profile-bell,
+                        #profile-welcome,
+                        #profile-btns {
+                            column-gap: 15px;
                         }
                         
                         #main-content {
@@ -129,5 +140,27 @@
                             width: 50px;
                             border-radius: 50%;
                             grid-row: span 2;
-                            margin-right: 20px;
+                        }
+                        
+                        #search input[type="text"] {
+                            appearance: none;
+                            border: none;
+                            background-color: #e2e8f0;
+                            height: 25px;
+                            border-radius: 15px;
+                        }
+                        
+                        #profile-btns button {
+                            appearance: none;
+                            border: none;
+                            background-color: #1992d4;
+                            color: white;
+                            padding: 8px 22px;
+                            border-radius: 15px;
+                            font-size: .7rem;
+                            cursor: pointer;
+                        }
+                        
+                        #profile-btns button:hover {
+                            background-color: #0076b6;
                         }
