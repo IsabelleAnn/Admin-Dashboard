@@ -2,7 +2,7 @@
 
 Part of The Odin Project Curriculum
 
-:point_right:[Live Demo]([https://isabelleann.github.io/TICTACTOE/](https://isabelleann.github.io/Admin-Dashboard/))
+:point_right:[Live Demo](https://isabelleann.github.io/Admin-Dashboard/)
 
 ## Built With:
   * HTML
