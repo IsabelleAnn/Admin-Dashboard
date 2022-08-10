@@ -16,5 +16,5 @@ Part of The Odin Project Curriculum
   
   * git + Github
 
-[Design](https://cdn.statically.io/gh/TheOdinProject/curriculum/main/html_css/grid-lessons/project-dashboard/dashboard-project.png)
+  * [Design Example](https://cdn.statically.io/gh/TheOdinProject/curriculum/main/html_css/grid-lessons/project-dashboard/dashboard-project.png)
 
